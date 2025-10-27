@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LIFE CARE 360</title>
   <style>
-    /* 기본 스타일 */
     :root {
       --main-color: #007fa8;
       --accent-color: #6bc4b2;
@@ -76,7 +75,6 @@
       background: #005f78;
     }
 
-    /* 제품 섹션 */
     .products {
       display: flex;
       flex-wrap: wrap;
@@ -104,6 +102,7 @@
     .product img {
       width: 100%;
       height: auto;
+      border-radius: 8px;
       image-rendering: -webkit-optimize-contrast;
       image-rendering: crisp-edges;
     }
@@ -127,49 +126,10 @@
       padding-bottom: 40px;
     }
 
-    /* 반응형 스타일 */
-    @media (max-width: 1024px) {
-      h1 {
-        font-size: 2rem;
-      }
-      .circle {
-        width: 100px;
-        height: 100px;
-        font-size: 1rem;
-      }
-      .product {
-        width: 45%;
-        max-width: 240px;
-      }
-    }
-
     @media (max-width: 768px) {
-      header {
-        padding-top: 40px;
-      }
-      h1 {
-        font-size: 1.8rem;
-      }
-      h2 {
-        font-size: 1rem;
-      }
-      .circle {
-        width: 90px;
-        height: 90px;
-        font-size: 0.95rem;
-      }
-      .products {
-        gap: 20px;
-      }
       .product {
         width: 80%;
         max-width: 320px;
-      }
-      .product h3 {
-        font-size: 1rem;
-      }
-      p {
-        font-size: 0.95rem;
       }
     }
 
@@ -177,22 +137,8 @@
       h1 {
         font-size: 1.6rem;
       }
-      h2 {
-        font-size: 0.9rem;
-      }
-      .circle {
-        width: 80px;
-        height: 80px;
-        font-size: 0.85rem;
-      }
       .product {
         width: 90%;
-      }
-      p {
-        font-size: 0.9rem;
-      }
-      footer {
-        font-size: 0.8rem;
       }
     }
   </style>
@@ -207,55 +153,55 @@
 
   <p>
     LIFE CARE 360은 약물 관리, 자세 교정, 호흡 훈련, 생체 모니터링을 통합한 
-    AI 기반 맞춤형 헬스케어 플랫폼입니다.  
+    AI 기반 맞춤형 헬스케어 플랫폼입니다.<br/>
     데이터 기반 분석과 실시간 모니터링을 통해 시니어의 건강을 위한
     “Total Life-Care Ecosystem”을 제공합니다.
   </p>
 
-  <a href="https://github.com/Addable99/lifecare360-image/blob/main/LIFE_CARE_360.pptx" class="button" download>📄 브로슈어 다운로드</a>
+  <a href="brochure.pdf" class="button" download>📄 브로슈어 다운로드</a>
 
   <section class="products">
     <div class="product">
-      <img src="https://github.com/Addable99/lifecare360-image/blob/main/omron.png" alt="오므론 혈압계" />
+      <img src="images/omron.png" alt="오므론 혈압계" />
       <h3>오므론 자동혈압계</h3>
       <p>
-        국제표준 인증을 받은 정확한 혈압계.  
+        국제표준 인증을 받은 정확한 혈압계.<br/>
         블루투스 연동과 부드러운 커프로 편리한 사용이 가능합니다.
       </p>
     </div>
 
     <div class="product">
-      <img src="https://github.com/Addable99/lifecare360-image/blob/main/accu-chek.png" alt="아큐첵 혈당계" />
+      <img src="images/accu-chek.png" alt="아큐첵 혈당계" />
       <h3>아큐첵 인스턴트 혈당계</h3>
       <p>
-        720개 데이터 저장 및 7~90일 평균 제공.  
+        720개 데이터 저장 및 7~90일 평균 제공.<br/>
         앱 연동으로 체계적인 혈당 관리 지원.
       </p>
     </div>
 
     <div class="product">
-      <img src="https://github.com/Addable99/lifecare360-image/blob/main/medbox.png" alt="스마트 복약기" />
+      <img src="images/medbox.png" alt="스마트 복약기" />
       <h3>스마트 복약기</h3>
       <p>
-        약 잔량 감지 센서로 복약 순응도 향상.  
+        약 잔량 감지 센서로 복약 순응도 향상.<br/>
         고령자와 만성질환자를 위한 원격 복약 관리 단말.
       </p>
     </div>
 
     <div class="product">
-      <img src="https://github.com/Addable99/lifecare360-image/blob/main/medbox_screen.png" alt="스마트 약상자 화면" />
+      <img src="images/medbox_screen.png" alt="스마트 약상자 화면" />
       <h3>복약 모니터링 시스템</h3>
       <p>
-        병원·약국·환자 간 처방 연동 가능한  
+        병원·약국·환자 간 처방 연동 가능한<br/>
         웹 기반 모니터링 서비스 제공.
       </p>
     </div>
 
     <div class="product">
-      <img src="https://github.com/Addable99/lifecare360-image/blob/main/fitrus.png" alt="Fitrus 체성분 분석기" />
+      <img src="images/fitrus.png" alt="Fitrus 체성분 분석기" />
       <h3>Fitrus+ 체성분 분석기</h3>
       <p>
-        BIA 기반 체성분, 심박, 스트레스 측정.  
+        BIA 기반 체성분, 심박, 스트레스 측정.<br/>
         운동·식단 추천으로 맞춤형 건강 관리 가능.
       </p>
     </div>
